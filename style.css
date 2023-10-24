@@ -1,0 +1,185 @@
+* {
+    border: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background: rgb(250, 250, 250) url('Ortho-Bg.jpg');
+    font-family: Lato, Helvetica, Arial, sans-serif;
+  }
+  
+  a {
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    text-decoration: none;
+  }
+  
+  #navbar {
+    color: white;
+    position: fixed;
+    top: 0;
+    height: 60px;
+    line-height: 60px;
+    width: 100vw;
+    z-index: 10;
+  }
+  
+  .nav-wrapper {
+    margin: auto;
+    text-align: center;
+    width: 70%;
+  }
+  
+  
+  .logo {
+    float: left;
+    margin-left: -180px;
+    margin-top: 18px;
+  }
+  
+  #navbar ul {
+    display: inline-block;
+    list-style: none;
+    margin-top: -2px;
+    text-align: right;
+    transition: transform 0.5s ease-out;
+    -webkit-transition: transform 0.5s ease-out;
+    margin-top: 30px;
+  }
+  
+  #navbar li {
+    display: inline-block;
+  }
+  
+  #navbar li a {
+    color: white;
+    display: block;
+    font-size:medium;
+    height: 50px;
+    letter-spacing: 1px;
+    margin: 0 20px;
+    padding: 0 4px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+  }
+  
+  #navbar li a:hover {
+    /* border-bottom: 1px solid rgb(28, 121, 184); */
+    color: rgb(28, 121, 184);
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+  }
+  
+  /* Animated Bottom Line */
+  #navbar li a:before, #navbar li a:after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    bottom: -1px;
+    background: rgb(13, 26, 38);
+  }
+  
+  #navbar li a:before {
+    left: 0;
+    transition: 0.5s;
+  }
+  
+  #navbar li a:after {
+    background: rgb(13, 26, 38);
+    right: 0;
+    /* transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1); */
+  }
+  
+  #navbar li a:hover:before {
+    background: rgb(13, 26, 38);
+    width: 100%;
+    transition: width 0.5s cubic-bezier((0.22, 0.61, 0.36, 1));
+  }
+  
+  #navbar li a:hover:after {
+    background: transparent;
+    width: 100%;
+    /* transition: 0s; */
+  }
+
+  .content{
+    margin-top: 260px;
+    text-align: left;
+    margin-left: 150px;
+  }
+  
+  .title{
+    color: white;
+    font-size:50px;
+    font-weight: bold;
+    margin-left: 200px;
+  }
+  .idea{
+    color: white;
+    font-size:30px;
+    font-weight: normal;
+    width: 60%;
+    text-align: center;
+  }
+  
+  .name{
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .below-nav{
+    margin-top: 80px;
+    background-color: white;
+    height: 550px;
+    margin: 50px 90px 50px 90px;
+    border-radius: 8px;
+  }
+
+  .vision{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+    margin: 120px 40px 20px 100px;
+
+  }
+
+  #label-container{
+   
+    margin-top: 200px;
+    font-size: larger;
+  }
+
+  .developers{
+    margin-top: 100px;
+    background-color: white;
+    height: 550px;
+    margin: 100px 90px 50px 90px;
+    border-radius: 8px;
+    text-align: center;
+  }
+
+  .photos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0px;
+    margin-top:100px;
+    text-align: center;
+  }
+
+  .pic{
+    border-radius: 50px;
+  }
+
+  .role{
+    font-weight: 600;
+  }
+  .names{
+    padding-bottom: 5px;
+  }
